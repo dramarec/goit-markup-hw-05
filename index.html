@@ -62,7 +62,16 @@
       <section class="hero">
         <div class="conteiner header">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <a href="" class="hero-link">Заказать услугу</a>
+          <!-- <a href="" class="hero-link">Заказать услугу
+          </a> -->
+          <button class="hero-link" data-modal-open>Заказать услугу
+          </button>
+        </div>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <button class="close" data-modal-close>x</button>
+            
+          </div>
         </div>
       </section>
 
@@ -171,7 +180,7 @@
                             руке ручка для планшета"
                   width="370"
                   height="294"
-                />
+                /> 
                 <div class="engage-pic-title">
                   <p>Дизайнерские решения</p>
                 </div>
@@ -495,5 +504,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
