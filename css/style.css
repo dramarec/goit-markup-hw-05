@@ -75,6 +75,8 @@ footer .logo {
 	line-height: 1.1; /* 16 */
 	letter-spacing: 0.02em;
 	text-decoration: none;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-list .link {
@@ -88,7 +90,6 @@ footer .logo {
 .contacts-list .link:focus,
 .contacts-list .link:hover {
 	color: var(--accent-color);
-	transition: 250ms opacity linear;
 }
 
 .current-index:after {
@@ -121,17 +122,20 @@ footer .logo {
 .envelope-icon {
 	width: 16px;
 	height: 12px;
-	/* background-image: url(../svg/header/envelope.svg); */
 	margin-right: 10px;
-	/* color: currentColor; */
+	fill: var(--primary-text-color);
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .smartphone-icon {
 	width: 10px;
 	height: 16px;
-	/* background-image: url(../svg/header/smartphone.svg); */
 	margin-right: 10px;
-	/* color: currentColor; */
+	fill: var(--primary-text-color);
+
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .envelope.link:hover .envelope-icon {
@@ -476,6 +480,8 @@ footer .logo {
 	fill: currentColor;
 	width: 20px;
 	height: 20px;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .item-link:hover .icon {
@@ -520,6 +526,8 @@ footer .logo {
 
 .client-logo {
 	fill: currentColor;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-logo.one {
@@ -578,6 +586,8 @@ footer .logo {
 	line-height: 26px; /* 1.6 */
 	border: none;
 	margin-bottom: 50px;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .flex-button button:hover,
@@ -603,6 +613,8 @@ footer .logo {
 	margin-right: 30px;
 	width: calc((100% - 60px) / 3);
 	overflow: hidden;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list:nth-child(3n) {
@@ -617,8 +629,6 @@ footer .logo {
 	background: #ffffff;
 	box-sizing: border-box;
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 	cursor: pointer;
 }
 
@@ -645,12 +655,13 @@ footer .logo {
 	height: 100%;
 	background: rgba(33, 150, 243, 0.9);
 	opacity: 0;
-	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	transform: translateY(100%);
 	font-size: 18px;
 	line-height: 28px;
 	padding: 63px 24px;
 	color: #ffffff;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-box:hover .product-actions.overlay {
@@ -757,20 +768,23 @@ footer .logo {
 	margin-left: 10px;
 }
 
-.footer-social .item:hover,
-.footer-social .item:focus {
-	background-color: var(--accent-color);
-	border-radius: 50%;
-}
-
-.footer-link {
+.footer-social .item {
 	display: flex;
 	width: 44px;
 	height: 44px;
 	border-radius: 50%;
 	background: rgba(255, 255, 255, 0.1);
+	border-radius: 50%;
 	justify-content: center;
 	align-items: center;
+	border-radius: 50%;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-social .item:hover,
+.footer-social .item:focus {
+	background-color: var(--accent-color);
+	border-radius: 50%;
 }
 
 .footer-icon {
