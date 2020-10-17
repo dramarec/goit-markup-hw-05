@@ -20,18 +20,20 @@
     <header class="page-header">
       <div class="conteiner header">
         <!-- Навигация -->
-        <nav class="flex">
+        <nav class="nav">
           <a href="./index.html" class="logo">
             <span class="logo-item">Web</span>Studio
           </a>
           <ul class="site-nav list">
-            <li class="item current-index">
+            <li class="item current">
               <a href="./index.html" class="link current">Студия</a>
             </li>
             <li class="item">
               <a href="./portfolio.html" class="link">Портфолио</a>
             </li>
-            <li class="item"><a href="" class="link">Контакты</a></li>
+            <li class="item">
+              <a href="" class="link">Контакты</a>
+            </li>
           </ul>
         </nav>
         <ul class="contacts-list list">
@@ -69,7 +71,11 @@
         </div>
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
-            <button class="close" data-modal-close>x</button>
+            <button class="close" data-modal-close>
+              <svg class="icon-vector">
+                <use href="./svg/symbol-defs.svg#icon-vector"></use>
+              </svg>
+            </button>
             
           </div>
         </div>
